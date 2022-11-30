@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import ExpenseItem from "./components/ExpenseItem";
 import "./App.css";
 
