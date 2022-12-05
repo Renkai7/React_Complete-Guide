@@ -6,7 +6,7 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 
 // adding props in parameter
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
 	return (
 		<Card className="expense-item">
 			<ExpenseDate date={props.date} />
@@ -16,7 +16,7 @@ function ExpenseItem(props) {
 			</div>
 		</Card>
 	);
-}
+};
 
 export default ExpenseItem;
 
