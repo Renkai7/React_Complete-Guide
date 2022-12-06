@@ -3,7 +3,6 @@ import Expenses from "./components/Expenses/Expenses";
 import "./App.css";
 
 const App = () => {
-	// Using JavaScript in React
 	const expenses = [
 		{
 			id: "e1",
@@ -33,7 +32,6 @@ const App = () => {
 	return (
 		<div>
 			<h2>Let's get Started!</h2>
-			{/* Adding a component */}
 			<Expenses items={expenses} />
 		</div>
 	);
