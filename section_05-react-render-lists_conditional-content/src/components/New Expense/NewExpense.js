@@ -18,16 +18,18 @@ const NewExpense = (props) => {
 		setIsEditing(false);
 	};
 
-	// changes state to 'Editing' state
-	// state used to switch between 'add expense button' and 'expense form'
+	// triggered when Add New Expense button is pressed
 	const startEditingHandler = () => {
 		setIsEditing(true);
 	};
-
+	// used to remove the form from screen
 	const stopEditingHandler = () => {
 		setIsEditing(false);
 	};
-
+	/*
+		Change user options between an Add New Expense button and the expense form.
+		Only want to show the Add Expense form if user decides to add an expense.
+	*/
 	return (
 		<div className="new-expense">
 			{!isEditing && (
@@ -45,3 +47,8 @@ const NewExpense = (props) => {
 };
 
 export default NewExpense;
+
+/*
+Notes
+- name of prop can be anything (i.e. onSaveExpenseData in ExpenseForm component)
+*/
