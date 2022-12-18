@@ -5,6 +5,7 @@ import "./Expenses.css";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
+import ExpensesChart from "./ExpensesChart";
 
 const Expenses = (props) => {
 	// Default value for year in 'Filter by year' dropdown
@@ -27,6 +28,7 @@ const Expenses = (props) => {
 					selected={filteredYear}
 					onChangeFilter={filterChangeHandler}
 				/>
+				<ExpensesChart expenses={filteredExpenses} />
 				{/* Expense Item or 'No expenses found' */}
 				<ExpensesList items={filteredExpenses} />
 			</Card>
